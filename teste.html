@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    body {
+        background-color: rgb(10, 15, 34);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .cabeçalho {
+        width: 100%;
+        text-align: center;
+        height: 5em;
+        background-color: rgb(4, 4, 15);
+        
+        
+    }
+
+    .cabeçalho h1 {
+        display: inline-block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: .2em;
+        font-weight: 600;
+        
+    }
+
+    .card {
+        width: 20em;
+        height: 29em;
+        background-color: rgb(100, 100, 100);
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 4em;
+        text-align: center;
+
+
+    }
+
+    .tela {
+        margin: auto;
+        display: inline-block;
+        width: 90%;
+        height: 4em;
+        background-color: rgb(41, 85, 45);
+        border-radius: 5px;
+        margin-top:1em ;
+        font-family: 'Orbitron', sans-serif;
+
+
+    }
+
+    .botoes {
+        
+        width: 90%;
+        height: 22em;
+        margin: auto;
+       background-color: rgb(80, 80, 80);
+        
+        grid-gap: .3em;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: .5em;
+    }
+
+    .container {
+        display: grid;
+        width: 90%;
+        height: 22em;
+        margin: auto;
+        margin-top: .5em ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+        grid-gap: .3em;
+        justify-content: center;
+        margin-top: .5em;
+        
+
+
+    }
+
+    .button-area {
+        background-color: rgb(58, 58, 58);
+        border-radius: 3px;
+        
+
+        
+    }
+
+    #zero {
+        grid-column: 1/3;
+        
+    }
+
+    #enter {
+        grid-column: 4/5;
+        grid-row: 4/6
+    }
+
+
+    .numero {
+        width: 93%;
+        height: 93%;
+        background-color: rgb(173, 173, 173);
+        border-radius: 3px ;
+    }
+
+    .zero {
+        width: 97%;
+        height: 93%;
+        background-color: rgb(173, 173, 173);
+        border-radius: 3px;
+    }
+    .enter {
+        width: 93%;
+        height: 97%;
+        background-color: rgb(173, 173, 173);
+        border-radius: 3px;
+    }
+
+    .numero:active {
+        width: 97%;
+        height: 97%;
+        margin: auto;
+        background-color:rgb(145, 145, 145);
+
+    }
+
+    .enter:active, .zero:active {
+        width: 96%;
+        height: 97%;
+        margin: auto;
+        background-color:rgb(145, 145, 145);
+
+    }
+
+    i {
+        display: inline-block;
+        margin-top: 1.2em;
+        font-weight: bold;
+        font-style: normal;
+
+    }
+
+    #pwr i{
+        margin-top: .8em;
+        font-size: 1.4em;
+    }
+
+    
+
+
+</style>
+<div class="cabeçalho">
+    <h1>O PENSADOR PENSARINO</h1>
+</div>
+
+
+
+<div class="card">
+
+    <div class="tela">
+        <h2>765</h2>
+    </div>
+
+    <div class="botoes">
+
+        <div class="container"> 
+        <div class="button-area"><div class="numero" id="pwr"><i class="fas fa-power-off"></i></div></div>
+        <div class="button-area"><div class="numero"><i>/</i></div></div>
+        <div class="button-area"><div class="numero"><i>*</i></div></div>
+        <div class="button-area"><div class="numero"><i>-</i></div></div>
+        <div class="button-area"><div class="numero"><i>7</i></div></div>
+        <div class="button-area"><div class="numero"><i>8</i></div></div>
+        <div class="button-area"><div class="numero"><i>9</i></div></div>
+        <div class="button-area"><div class="numero"><i>+</i></div></div>
+        <div class="button-area"><div class="numero"><i>4</i></div></div>
+        <div class="button-area"><div class="numero"><i>5</i></div></div>
+        <div class="button-area"><div class="numero"><i>6</i></div></div>
+        <div class="button-area"><div class="numero"><i>.</i></div></div>
+        <div class="button-area"><div class="numero"><i>1</i></div></div>
+        <div class="button-area"><div class="numero"><i>2</i></div></div>
+        <div class="button-area"><div class="numero"><i>3</i></div></div>
+
+        <div class="button-area" id="enter"><div class="enter"><i>=</i></div></div>
+
+        <div class="button-area" id="zero"><div class="zero"><i>0</i></div></div>
+
+        <div class="button-area"><div class="numero"><i>,</i></div></div>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+</div>
+
+    
+</body>
+</html>
